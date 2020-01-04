@@ -1,0 +1,115 @@
+<! DOCTYPE.html>
+
+	<html>
+	<head>	
+		<meta charset="utf-8">
+		<title>Formulário de Cadastro</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript"src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript"src="js/bootstrap.min.js"></script>
+		<script type="text/javascript"src="js/script.js"></script>
+	</head>
+	<body>
+		
+		<form method="POST">
+			<div class="panel panel-info">
+				<div class="panel-heading">Cadastro de Cliente</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-5">
+				<label for="nome">Nome:</label>
+				<input type="text" name="nome" class="form-control" />
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-3">
+				<label for="rg">RG:</label>
+				<input type="text" name="rg" class="form-control" />
+			</div>
+				<div class="form-group col-md-2">
+				<label for="nascimento">Nascimento:</label>	 
+				<input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+			</div>
+
+			<div class="form-row">
+				<div class="form-group col-md-2">
+				<label for="cep">CNPJ:</label>
+				<input type="tex" name="cnpj" id="cnpj" class="form-control">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-2">
+				<label for="cep">Cep:</label>
+				<input type="tex" name="cep" id="cep" class="form-control">
+			</div>
+			<div class="form-row">
+			<div class="form-group col-md-5">
+				<label for="endereco">Endereço:</label>
+				<input type="text" name="endereco" id="endereco" class="form-control">
+			</div>
+			<div class="form-row">
+				<div class="form-group col-md-3">
+				<label for="bairro">Bairro:</label>
+				<input type="text" name="bairro" id="bairro" class="form-control">
+			</div>	
+			<div class="form-row">
+			<div class="form-group col-md-2">
+				<label for="cidade">Cidade:</label>
+				<select id="cidade" class="form-control">
+					<option selected>Escolher...</option>
+					<option>Abadia dos Dourado</option>
+					<option>Abaeté</option>
+					<option>Abre Campo</option>
+					<option>Acaiaca</option>
+					<option>Açucena</option>
+					<option>Àgua Boa</option>
+					<option>Àgua Comprida</option>
+					<option>Aguantil</option>
+					<option>Àguas Formosas</option>
+					<option>Àguas Vermelhas</option>
+					<option>Jesuânia</option>
+					<option>Joíama</option>
+					<option>Joanésia</option>
+					<option>Jordânia</option>
+					<option>Januária</option>
+					<option>Juramento</option>
+					<option>Juvenília</option>
+					<option>Juatuba</option>
+					<option>Juiz de fora</option>
+					
+				</select>
+			</div>
+							
+			<div class="form-group col-md-2">
+				<label for="estado">Estado:</label>
+				<select id="estado" class="form-control">
+					<option selected>Escolher...</option>
+					<option>MG</option>
+					<option>RJ</option>
+					<option>SP</option>
+					<option>ES</option>
+					<option>AM</option>
+				</select>
+			</div>
+
+			<div class="form-group col-md-2">
+				<label for="sexo">Sexo:</label>
+				<Select type="text" name="sexo" id="sexo" class="form-control" />		<option>Feminino</option>
+					   <option>Masculino</option>
+				</select>	   
+			</div>	
+
+			<div class="form-row">
+				<div class="form-group col-md-3">
+				<label for="email">E-mail:</label>
+				<input type="email" name="email" id="email" class="form-control" />
+			</div>
+			<br/><br/>
+			<div class="form-group">
+			<label class="col-md-2 control-label" for="Cadastrar"></label>
+  			<div class="col-md-8">
+    		<button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+    		<button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+  </div>
+</div>	
+
+
